@@ -4,36 +4,59 @@ body {
   padding: 0;
 }
 
-nav {
+/* body, html {
+  height: 100%;
+} */
+
+/* header {
+  border: 2px solid orangered;
+} */
+
+/* nav {
   background-color: #383e4c;
+} */
+
+.hero-image {
+  border: 2px solid greenyellow;
+  background-image: url(Images/img11.jpg);
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
 }
 
 .section-1 {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   margin: 0;
 }
 .container-1 {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 50%;
   margin: auto;
 }
 
 .row-1 {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   display: flex;
   justify-content: space-between;
 }
 
 .row-2 {
-  border: 2px solid brown;
+  /* border: 2px solid brown; */
   display: flex;
   justify-content: space-between;
 }
 
 .small-article {
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   width: 30%;
   margin-bottom: 5%;
+  background-color: #F2F2F2;
 }
 
 .small-article img {
@@ -41,8 +64,9 @@ nav {
 }
 
 .large-article {
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   width: 47.5%;
+  background-color: #F2F2F2;
 }
 
 .large-article img {
@@ -50,25 +74,44 @@ nav {
 }
 
 .container-2 {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 50%;
   margin: auto;
 }
 
+.small-article2 {
+  /* border: 2px solid orange; */
+  width: 21.25%;
+  margin-bottom: 5%;
+  background-color: #F2F2F2;
+}
+
+.small-article2 img {
+  width: 100%;
+}
+
+.large-article2 {
+  /* border: 2px solid purple; */
+  width: 100%;
+  background-color: #F2F2F2;
+}
+
+.large-article2 img {
+  width: 100%;
+}
+
 .row1-sect2 {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   display: flex;
   justify-content: space-between;
 }
 
 .row2-sect2 {
-  border: 2px solid brown;
-  display: flex;
-  justify-content: ;
+  /* border: 2px solid brown; */
 }
 
 .our-services {
-  border: 2px solid palevioletred;
+  /* border: 2px solid palevioletred; */
   display: flex;
   justify-content: center;
 }
