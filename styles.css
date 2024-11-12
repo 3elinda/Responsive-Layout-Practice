@@ -6,7 +6,8 @@ body {
 }
 
 h1 {
-  font-weight: lighter;
+  font-weight: 400;
+  font-size: 50px;
 }
 
 nav {
@@ -20,14 +21,14 @@ nav {
 nav ul {
   /* border: 2px solid greenyellow; */
   list-style-type: none;
-  /* color: white; */
   display: flex;
   justify-content: center;
-  width: 50%;
-  gap: 5%;
+  width: 100%;
+  gap: 1%;
   margin: auto;
   padding-top: 0.6%;
   padding-bottom: 0.6%;
+  padding-left: 0;
 }
 
 nav ul li {
@@ -38,9 +39,9 @@ nav ul li {
   align-items: center;
   margin: 0;
   padding: 10px 20px;
-  /* padding: 1% 5%; */
-  /* padding: 1% 4%; */
+ 
 }
+
 
 nav ul li:first-child {
   background-color: #49505f;
@@ -60,12 +61,17 @@ nav ul li:first-child {
 
 .hero-text {
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 0px black;
   color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.hero-text p{
+  text-shadow: 1px 1px 2px black;
+
 }
 
 .row-2 h3 {
@@ -136,7 +142,7 @@ nav ul li:first-child {
   background-image: url("Images/img13.jpg");
   height: 30vh;
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
   background-attachment: fixed;
   position: relative;
   margin-bottom: 5%;
@@ -148,6 +154,7 @@ nav ul li:first-child {
   text-align: center;
   color: white;
 }
+
 
 .our-services p {
   /* border: 2px solid turquoise; */
@@ -257,7 +264,7 @@ button {
   height: 50vh;
   background-position: top;
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
   background-attachment: fixed;
   position: relative;
   margin-bottom: 5%;
@@ -268,14 +275,19 @@ button {
 
 .form-container {
   /* border: 2px solid red; */
-  max-width: 50%;
-  /* width: 50%; */
+  max-width: 30%;
+  padding-top: 2%;
   display: inline-block;
 }
 
-.form-container h2 {
+
+.form-container h2, .our-services h2{
+  font-weight: 400;
+  font-size: 30px;
+  text-shadow: 1px 1px 3px black;
   color: white;
 }
+
 
 .contact-form {
   /* border: 2px solid black; */
@@ -356,8 +368,12 @@ footer {
 }
 
 footer h2 {
-  font-weight: lighter;
+  font-weight: 400;
   font-style: italic;
+}
+
+footer p {
+  color: #666666;
 }
 
 hr {
@@ -390,6 +406,10 @@ hr {
 
   .row1-sect2 .small-article2 {
     width: 100%;
+  }
+
+  .form-container {
+    max-width: 80%;
   }
 }
 
