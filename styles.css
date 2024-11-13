@@ -439,15 +439,16 @@ hr {
 
   .btn1,
   .btn3 {
-    /* border: 2px solid hotpink; */
+    border: 2px solid hotpink;
     /* margin-top: 9%; */
     margin-top: 19%;
     margin-bottom: 7%;
   }
 
   .btn2 {
-    /* border: 2px solid hotpink; */
-    margin-top: 9%;
+    border: 2px solid hotpink;
+    /* margin-top: 9%; */
+    margin-top: 19%;
     margin-bottom: 7%;
   }
 
