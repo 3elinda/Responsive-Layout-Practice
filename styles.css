@@ -1,24 +1,24 @@
 body {
-  /* border: 2px solid goldenrod; */
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
 }
 
-h1 {
-  /* border: 2px solid greenyellow; */
-  margin-bottom: 0;
-  font-weight: 400;
-  font-size: 60px;
+/* VISUALLY HIDDEN H4 */
+.hidden {
+  border: 0;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0px, 0px, 0px, 0px);
+  /*clipping/cropping an image */
 }
 
+/* NAV********************************** */
 nav {
-  /* border: 2px solid pink; */
   background-color: #383e4c;
 }
 
 nav ul {
-  /* border: 2px solid greenyellow; */
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -43,8 +43,8 @@ nav ul li:first-child {
   background-color: #49505f;
 }
 
+/* HERO IMAGE***************************** */
 .hero-image {
-  /* border: 2px solid greenyellow; */
   background-image: url("Images/img11.jpg");
   height: 50vh;
   background-position: center;
@@ -55,8 +55,13 @@ nav ul li:first-child {
   margin-bottom: 4%;
 }
 
+h1 {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 60px;
+}
+
 .hero-text {
-  /* border: 2px solid red; */
   text-align: center;
   text-shadow: 2px 2px 0px black;
   color: white;
@@ -67,37 +72,24 @@ nav ul li:first-child {
 }
 
 .hero-text p {
-  /* border: 2px solid greenyellow; */
   text-shadow: 1px 1px 2px black;
   font-size: 22px;
   margin-top: 0;
 }
 
-.row-2 h3 {
-  /* border: 2px solid hotpink; */
-  text-align: center;
-}
-
-.row1-sect2 h3 {
-  /* border: 2px solid hotpink; */
-  text-align: center;
-}
-
+/* SECTIONS****************************/
 .container-1,
 .container-2 {
-  /* border: 2px solid blue; */
   width: 60%;
   margin: auto;
 }
 
-.row-1 {
-  /* border: 2px solid green; */
-  display: flex;
-  justify-content: space-between;
+.article-text {
+  padding: 0 5%;
 }
 
-.row-2 {
-  /* border: 2px solid brown; */
+/* SECTION 1****************************/
+.row-1 {
   display: flex;
   justify-content: space-between;
 }
@@ -115,7 +107,6 @@ nav ul li:first-child {
 }
 
 .small-article {
-  /* border: 2px solid orange; */
   width: 31%;
   margin-bottom: 3%;
   background-color: #f2f2f2;
@@ -125,8 +116,16 @@ nav ul li:first-child {
   width: 100%;
 }
 
+.row-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-2 h3 {
+  text-align: center;
+}
+
 .large-article {
-  /* border: 2px solid purple; */
   width: 48.25%;
   background-color: #f2f2f2;
   margin-bottom: 5%;
@@ -136,15 +135,14 @@ nav ul li:first-child {
   width: 100%;
 }
 
+/* OUR SERVICES******************************/
 .our-services {
-  /* border: 2px solid palevioletred; */
   background-image: url("Images/img13.jpg");
   height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  /* margin-bottom: 5%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,12 +152,20 @@ nav ul li:first-child {
 }
 
 .our-services p {
-  /* border: 2px solid turquoise; */
   width: 35%;
 }
 
+/* SECTION 2****************************/
+.row1-sect2 h3 {
+  text-align: center;
+}
+
+.row1-sect2 {
+  display: flex;
+  justify-content: space-between;
+}
+
 .small-article2 {
-  /* border: 2px solid orange; */
   width: 22.7%;
   margin-top: 5%;
   margin-bottom: 3%;
@@ -171,7 +177,6 @@ nav ul li:first-child {
 }
 
 .large-article2 {
-  /* border: 2px solid purple; */
   width: 100%;
   background-color: #f2f2f2;
   margin-bottom: 5%;
@@ -181,22 +186,8 @@ nav ul li:first-child {
   width: 100%;
 }
 
-.row1-sect2 {
-  /* border: 2px solid green; */
-  display: flex;
-  justify-content: space-between;
-}
-
-.row2-sect2 {
-  /* border: 2px solid brown; */
-}
-
-.article-text {
-  padding: 0 5%;
-}
-
+/* BUTTONS******************/
 .btns-row1 {
-  /* border: 2px solid hotpink; */
   display: flex;
   justify-content: center;
   margin-top: 2%;
@@ -205,7 +196,6 @@ nav ul li:first-child {
 
 .btn1,
 .btn3 {
-  /* border: 2px solid hotpink; */
   display: flex;
   justify-content: center;
   margin-top: 12%;
@@ -213,7 +203,6 @@ nav ul li:first-child {
 }
 
 .btn2 {
-  /* border: 2px solid hotpink; */
   display: flex;
   justify-content: center;
   margin-top: 2%;
@@ -221,8 +210,6 @@ nav ul li:first-child {
 }
 
 .btn4 {
-  /* border: 2px solid hotpink; */
-
   width: 85%;
   display: flex;
   justify-content: flex-end;
@@ -231,7 +218,6 @@ nav ul li:first-child {
 }
 
 .btn6 {
-  /* border: 2px solid hotpink; */
   padding-left: 5%;
   padding-top: 1%;
   padding-bottom: 3%;
@@ -308,7 +294,6 @@ button {
 }
 
 .contact-form {
-  /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
 }
@@ -316,12 +301,10 @@ button {
 .form-text {
   padding: 3%;
   border-radius: 5px;
-  /* border: 1px solid red; */
   background-color: rgba(225, 225, 225, 0.8);
 }
 
 .form-inputs-msg {
-  /* border: 2px solid yellow; */
   display: flex;
   justify-content: space-between;
   margin-top: 3%;
@@ -331,15 +314,13 @@ button {
 
 .form-inputs {
   width: 46%;
-  /* padding: 0; */
-  /* border: 2px solid green; */
+
   height: 100%;
   display: grid;
   gap: 10%;
 }
 
 .form-inputs input {
-  /* border: 2px solid hotpink; */
   height: 100%;
   box-sizing: border-box;
   width: 100%;
@@ -349,16 +330,13 @@ button {
 }
 
 textarea {
-  /* border: 2px solid hotpink; */
   width: 46%;
   border-radius: 5px;
   background-color: rgba(225, 225, 225, 0.8);
   border: none;
-  /* height: auto; */
 }
 
 .btn-container {
-  /* border: 1px solid red; */
   display: flex;
   padding-left: 53.5%;
 }
@@ -367,7 +345,6 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 20%; */
   padding: 10px 25px;
   border-radius: 5px;
   color: white;
@@ -377,7 +354,6 @@ textarea {
 /* FOOTER *********************************/
 
 footer {
-  /* border: 2px solid yellowgreen; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -416,10 +392,6 @@ hr {
     width: 80%;
   }
 
-  .our-services p {
-    width: 60%;
-  }
-
   .row1-sect2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -439,17 +411,16 @@ hr {
 
   .btn1,
   .btn3 {
-    border: 2px solid hotpink;
-    /* margin-top: 9%; */
-    margin-top: 19%;
+    margin-top: 18%;
     margin-bottom: 7%;
   }
 
   .btn2 {
-    border: 2px solid hotpink;
-    /* margin-top: 9%; */
-    margin-top: 19%;
     margin-bottom: 7%;
+  }
+
+  .our-services p {
+    width: 60%;
   }
 
   .form-container {
@@ -459,16 +430,17 @@ hr {
 
 /* Mobile *******************************/
 @media screen and (max-width: 520px) {
-  nav ul li {
-    padding: 5px 10px;
+  nav ul {
+    gap: 3%;
   }
 
-  .hero-image {
+  nav ul li {
+    padding: 5px 27px;
   }
 
   .container-1,
   .container-2 {
-    width: 95%;
+    width: 85%;
   }
 
   .row-1,
@@ -478,10 +450,44 @@ hr {
     flex-direction: column;
   }
 
+  .row1-sect2 {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .row1-sect2 img {
+    height: 330px;
+  }
+
   .small-article,
   .large-article,
   .small-article2 {
     width: 100%;
+  }
+
+  .small-article,
+  .large-article {
+    margin-top: 0;
+    margin-bottom: 7%;
+  }
+
+  .small-article2 {
+    margin: 0;
+    margin-top: 7%;
+  }
+
+  .small-article2:nth-of-type(2) {
+    margin-top: 16%;
+  }
+
+  .small-article2:nth-of-type(3) {
+    margin-top: 16%;
+  }
+
+  .large-article2 {
+    margin-top: 7%;
+    margin-bottom: 10%;
   }
 
   .our-services p {
